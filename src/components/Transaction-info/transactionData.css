@@ -1,0 +1,33 @@
+.transaction-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.transaction-item .left-details{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.left-details svg{
+    padding: 10px;
+    background-color: white;
+    color: red;
+    width: 30px;
+    height: 30px;
+}
+
+.left-details h3{
+    font-size: .8rem;
+}
+
+.left-details span{
+    font-size: .5rem;
+    color: grey;
+}
+
+.right-details{
+    font-size: .7rem;
+}

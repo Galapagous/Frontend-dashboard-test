@@ -1,0 +1,18 @@
+.button-container{
+    padding: 5px 10px;
+    color: white;
+    border-radius: 3px;
+    font-size: .8rem;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 10px;
+}
+
+.button-container h2{
+    font-size: .9rem;
+}
+
+.button-container span{
+    color: white;
+}

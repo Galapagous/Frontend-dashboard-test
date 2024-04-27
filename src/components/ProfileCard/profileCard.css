@@ -1,0 +1,23 @@
+.profile-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.profile-container img{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.profile-container .details h2{
+    font-size: 1rem;
+}
+
+.profile-container .details span{
+    font-size: .75rem;
+    color: grey;
+}

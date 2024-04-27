@@ -1,0 +1,157 @@
+@media screen and (max-width: 480px) {
+.dashboard-container{
+    flex-direction: column-reverse;
+    font-size: .6rem;
+    width: 100vw;
+}
+
+.menu-bar{
+    height: auto;
+    width: 100%;
+    flex-direction: row;
+    gap: 10px;
+    padding: 0px;
+    padding-top: 0px;
+    margin: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+}
+
+
+.menu-bar::after{
+    display: none;
+}
+
+.menu-bar .logo{
+    display: none;
+}
+
+.left-nav-bar .logo{
+    margin-bottom: 15px;
+}
+
+.left-nav-bar .logo svg{
+    width: 30px;
+    height: 30px;
+    color: #7970C9;
+}
+
+.left-nav-bar .logo svg:nth-child(2){
+    color: #3326AE;
+}
+
+.menu-bar .menu-icons{
+    flex-direction: row;
+}
+
+.active-icon{
+    left: auto;
+    bottom: 25px;
+    box-shadow: 1px 5px 5px 2px rgb(41, 41, 41);
+}
+
+.main-container{
+    flex: 1;
+    height: auto;
+    border-radius: 0px 0px 0px 0px;
+    width: 100vw;
+}
+
+.nav-bar{
+    padding: 10px;
+    width: 100%;
+}
+
+.left-nav-bar{
+    gap: 0px;
+}
+
+.left-nav-bar .logo{
+    display: block;
+}
+
+.left-nav-bar .search-area{
+    display: none;
+}
+
+.left-nav-bar span{
+    display: none;
+}
+
+.nav-bar .right-nav-bar{
+    gap: 10px;
+}
+
+.switcher{
+    display: flex;
+}
+
+.switcher-icons{
+    display: block;
+    margin: 20px auto;
+}
+
+.hero-container{
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+    flex-direction: column;
+}
+
+.hero-left{
+    flex: 1;
+    width: 100%;
+    display: none;
+}
+
+.hero-left .hero-left-top-area{
+    margin: 0 auto;
+    align-items: center;
+}
+
+.hero-left-bottom{
+    flex-direction: column;
+}
+
+.hero-bottom-left{
+    padding: 10px;
+    width: 100%;
+}
+
+.hero-left-bottom .top-area h3{
+  font-size: .8rem;
+}
+
+.hero-bottom-right{
+    width: 100%;
+    display: none;
+}
+
+.hero-bottom-right p{
+  font-size: .9rem;
+}
+
+.connect span{
+  font-size: .8rem;
+}
+
+.hero-container .hero-right{
+    padding: 10px;
+    gap: 20px;
+    display: none;
+}
+
+.hero-container .mobile{
+    display: block;
+}
+
+.hero-container .mobile-active{
+    display: flex;
+}
+
+}

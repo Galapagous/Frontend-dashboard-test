@@ -1,0 +1,473 @@
+:root{
+  --blue : #3326AE;
+  --grey : #F6F8FF;
+  --grey2 : #7970C9;
+  --base-background : #B6E2EA;
+  --Red : #FF392B;
+  --blue-icon : #15C6F8;
+  --card-color2 : #FFC005;
+  --card-color3 : #00C3F8;
+}
+
+.dashboard-container{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: auto;
+  height: auto;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: .8rem;
+}
+
+/* -------Logo design area ---------- */
+
+.menu-bar{
+  flex: 1;
+  background-color: var(--blue);
+  height: 100vh;
+  border-radius: 20px;
+  position: relative;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+  gap: 150px;
+}
+
+.menu-bar svg{
+  width: 20px;
+  height: 20px;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+
+.menu-bar .logo{
+  position: relative;
+}
+
+.menu-bar .logo svg:nth-child(2){
+  color: var(--grey2);
+  position: absolute;
+  left: 6px;
+  z-index: 1;
+}
+
+/* -------menu icons-------- */
+.menu-bar .icons{
+  cursor: pointer;
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  transition: all 400ms ease-in;
+}
+
+.icons svg{
+  color: var(--grey2);
+}
+
+.menu-bar .menu-icons{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+}
+
+.active-icon{
+  color: var(--Red);
+  background-color: white;
+  box-shadow: 5px 5px 0px 0px rgb(41, 41, 41);
+  position: relative;
+  border-radius: 3px;
+  left: 40px;
+  transition: all 400ms ease-in;
+}
+
+.active-icon svg{
+  color: var(--Red);
+}
+
+.menu-bar::after{
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: 0;
+  width: 30%;
+  height: 100%;
+  background-color: white;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.main-container{
+  flex: 12;
+  padding: 20px;
+  height: 100vh;
+  border-radius: 0px 20px 20px 0px;
+}
+
+/* --------Top navbar area-------- */
+
+.nav-bar{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 0px;
+}
+
+/* --------Left navbar section-------- */
+.nav-bar .left-nav-bar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.left-nav-bar .logo{
+  display: none;
+}
+
+.left-nav-bar .logo svg:nth-child(2){
+  position: absolute;
+  left: 3px;
+  z-index: 1;
+}
+
+.search-area{
+  background-color: var(--grey);
+  position: relative;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.search-area input{
+  width: 100%;
+  padding: 0px 40px;
+  border: none;
+  background-color: var(--grey);
+  outline: none;
+}
+
+.left-nav-bar svg{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 10px;
+  color: var(--blue);
+  width: 15px;
+  height: 15px;
+}
+
+.left-nav-bar span{
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.left-nav-bar span:hover{
+  background-color: var(--grey);
+  color: var(--blue);
+}
+
+/* --------Right navbar section-------- */
+.nav-bar .right-nav-bar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.right-nav-bar .notification{
+  position: relative;
+  cursor: pointer;
+}
+
+.right-nav-bar .indicator{
+  width: 5px;
+  height: 5px;
+  background-color: var(--Red);
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.indicator svg{
+  width: 20px;
+  height: 20px;
+}
+
+.right-nav-bar .profile img{
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+/* -------status switch--------- */
+.switcher{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: none;
+}
+
+.switcher .switcher-icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  width: fit-content;
+  height: fit-content;
+  overflow: hidden;
+  color: grey;
+  /* display: none; */
+  /* box-shadow:3px 3px 1px 1px rgb(192, 192, 192); */
+  box-shadow: 1px 5px 5px 2px #cdcfd3;
+}
+
+.switcher-icons svg{
+  padding: 5px;
+  width: 70px;
+  height: 40px;
+  transition: all 400ms ease-in-out;
+}
+
+.active-switch{
+  background-color: var(--blue-icon);
+  color: white;
+}
+
+.switcher h2{
+  margin-bottom: 10px;
+}
+
+
+/* -------Hero container------- */
+
+.hero-container{
+  display: flex;
+  padding-top: 10px;
+  align-items: start;
+  padding-right: 20px;
+  justify-content: center;
+  gap: 30px;
+}
+
+.hero-container .hero-left{
+  flex: 2;
+  transition: all 400ms ease-in-out;
+}
+
+.hero-left-top-area{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.hero-left-main-area{
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 6px;
+  height: 220px;
+  background-color: var(--grey);
+}
+
+/* --------Hero buttom area--------- */
+
+.hero-left-bottom{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.hero-bottom-left{
+  flex: 1;
+  box-shadow: 1px 5px 5px 2px #cdcfd3;
+  padding: 20px;
+}
+
+.hero-left-bottom .top-area{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.hero-left-bottom .top-area h3{
+  font-size: 1rem;
+}
+
+.hero-bottom-right{
+  flex: 1;
+  padding: 20px;
+  box-shadow: 1px 5px 5px 2px #cdcfd3;
+}
+
+.hero-bottom-right p{
+  font-size: 1.1rem;
+}
+
+.hero-bottom-right .icons-area{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.hero-bottom-right .timeline{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.timeline .connect{
+  padding: 8px 12px;
+  background-color: var(--blue);
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 16px;
+}
+
+.connect svg{
+  width: 15px;
+  height: 15px;
+}
+
+.connect span{
+  font-size: 1rem;
+  color: white;
+}
+
+/* ---------Right hand panel--------- */
+
+.hero-container .hero-right{
+  background-color: var(--grey);
+  height: calc(100vh - 70px);
+  border-radius: 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  width: 100%;
+  transition: all 400ms ease-in-out;
+}
+
+.hero-right .circular-progress{
+  margin-top: 40px;
+}
+
+.hero-right .button-container{
+  position: absolute;
+  right: -30px;
+  top: 100px;
+  box-shadow: 1px 5px 5px 2px #cdcfd3;
+}
+
+.hero-right .icon-container{
+  width: 300px;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin: 10px 0px;
+}
+
+.hero-right .icon-container svg{
+  cursor: pointer;
+}
+
+/* -------card design------- */
+.hero-right .card-design{
+  width: 300px;
+  height: 160px;
+  background-color: var(--card-color3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-details{
+  width: 300px;
+  height: 160px;
+  border-radius: 6px;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.card-design{
+  z-index: 3;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-design::after{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 0px 40px 0px 0px;
+  content: '';
+  width: 50%;
+  height: 60%;
+  background-color: var(--card-color2);
+  z-index: 1;
+}
+.card-design::before{
+  position: absolute;
+  bottom: -45px;
+  left: -65px;
+  border-radius: 0px 60px 0px 0px;
+  content: '';
+  width: 80%;
+  height: 120%;
+  background-color: var(--blue);
+  transform: rotate(40deg);
+  z-index: 2;
+}
+
+.card-design span{
+  color: white;
+  font-size: .8rem;
+}
+
+.card-design .top-card-details{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-card-details .logo{
+  width: 40px;
+  height: 20px;
+  background-color: var(--grey);
+}
+
+.top-card-details svg{
+  width: 40px;
+  height: 30px;
+}
+
+.card-design .middle-card-details,.bottom-card-details{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.transaction-area .icon-container span{
+  font-size: 1rem;
+}

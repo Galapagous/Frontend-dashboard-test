@@ -1,0 +1,14 @@
+@media only screen and ( min-width: 760px) and (max-width: 1030px){
+    .dashboard-container{
+        /* font-size: .7rem; */
+        height: auto;
+    }
+
+    .menu-bar{
+        padding-right: 60px;
+        align-items: flex-start;
+        flex: 2;
+        height: 100vh;
+        padding-top: 30px;
+    }
+}
